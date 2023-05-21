@@ -1,46 +1,19 @@
 <template>
-  <v-container>
-    <v-row
-      class="mb-12"
-      no-gutters
+  <v-container
+      class="fill-height d-flex"
+      fluid
+      fill-height
+      align-center
+      justify-center
+  >
+    <v-card
+        class="transparent-card mx-auto"
+        max-width="800"
     >
-      <v-col>
-        <h3 class="text-center">
-          Our Purpose
-        </h3>
-      </v-col>
-    </v-row>
-    <v-row
-      class="mb-12"
-      no-gutters
-    >
-      <v-col>
-        <h1 class=" text-center">
-          We are helping people to find
-        </h1>
-      </v-col>
-    </v-row>
-    <v-row
-      class="mb-12"
-      no-gutters
-    >
-      <v-col>
-        <h1 class="text-center">
-          love and courage in their hearts to live with
-        </h1>
-      </v-col>
-    </v-row>
-    <v-row
-      class="mb-12"
-      no-gutters
-    >
-      <v-col>
-        <h1 class="text-center">
-          dignity and
-        </h1>
-      </v-col>
-    </v-row>
-
+      <v-card-title class="text-uppercase">Learning Bible</v-card-title>
+      <v-card-text class="pt-7">We Aim to Be Guided</v-card-text>
+      <v-card-text class="pt-12">by God's Word</v-card-text>
+    </v-card>
   </v-container>
 </template>
 
