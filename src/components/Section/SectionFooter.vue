@@ -3,7 +3,6 @@
     <v-col lg="12">
       <v-row justify="center">
         <v-col lg="4" class="text-center">
-          <v-toolbar-title>Fajar Corp</v-toolbar-title>
           <v-card-text>
             <v-btn
               v-for="icon in icons"
