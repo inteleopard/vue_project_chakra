@@ -3,6 +3,8 @@
     <AppHeader />
     <v-main>
       <AppSlider />
+      <AppOverview />
+      <AppPurpose />
       <SectionFooter />
     </v-main>
   </v-app>
@@ -11,13 +13,17 @@
 <script>
 import AppHeader from "./components/AppHeader.vue";
 import AppSlider from "./components/AppSlider.vue";
+import AppOverview from "@/components/AppOverview.vue";
+import AppPurpose from "@/components/AppPurpose.vue";
 import SectionFooter from "./components/Section/SectionFooter";
 export default {
   name: "App",
 
   components: {
+    AppPurpose,
     AppHeader,
     AppSlider,
+    AppOverview,
     SectionFooter,
   },
 
