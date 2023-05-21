@@ -2,6 +2,7 @@
   <v-app>
     <AppHeader />
     <v-main>
+      <AppSlider />
       <AppHero />
       <SectionAbout />
       <SectionPortofolio />
@@ -15,6 +16,7 @@
 
 <script>
 import AppHeader from "./components/AppHeader.vue";
+import AppSlider from "./components/AppSlider.vue";
 import AppHero from "./components/AppHero.vue";
 import SectionAbout from "./components/Section/SectionAbout.vue";
 import SectionPortofolio from "./components/Section/SectionPortofolio.vue";
@@ -27,6 +29,7 @@ export default {
 
   components: {
     AppHeader,
+    AppSlider,
     AppHero,
     SectionAbout,
     SectionPortofolio,
@@ -39,3 +42,17 @@ export default {
   data: () => ({}),
 };
 </script>
+
+<style scoped>
+  .container {
+    width: 100% !important;
+    padding: 0 !important;
+  }
+  
+  @media (min-width: 960px) {
+    .container {
+      max-width: 100%;
+    }
+  }
+
+</style>
