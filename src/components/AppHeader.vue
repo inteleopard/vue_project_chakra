@@ -1,18 +1,16 @@
 <template>
   <v-app-bar
-    style="padding: 0 150px"
     app
     color="white"
     light
     elevation="6"
     elevate-on-scroll
   >
-    <!-- <v-toolbar-title></v-toolbar-title> -->
     <v-img
           :src="require('../assets/logo.webp')"
-          class="my-2"
+          class=""
           contain
-          height="100"
+          height="60"
         />
     <v-spacer />
     <v-list class="d-flex align-center">
@@ -38,12 +36,12 @@ export default {
   data: () => ({
     menus: [
       { title: "Home", route: "home" },
-      { title: "Activities", route: "about-us" },
-      { title: "Retreats", route: "portofolio" },
-      { title: "Accommodation", route: "project" },
-      { title: "Spirituality", route: "gallery" },
-      { title: "About Us", route: "contact" },
-      { title: "Contact Us", route: "contact" },
+      { title: "Activities", route: "home" },
+      { title: "Retreats", route: "home" },
+      { title: "Accommodation", route: "home" },
+      { title: "Spirituality", route: "home" },
+      { title: "About Us", route: "home" },
+      { title: "Contact Us", route: "home" },
     ],
   }),
 };

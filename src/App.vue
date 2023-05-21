@@ -3,12 +3,6 @@
     <AppHeader />
     <v-main>
       <AppSlider />
-      <AppHero />
-      <SectionAbout />
-      <SectionPortofolio />
-      <SectionProject />
-      <SectionGallery />
-      <SectionContact />
       <SectionFooter />
     </v-main>
   </v-app>
@@ -17,12 +11,6 @@
 <script>
 import AppHeader from "./components/AppHeader.vue";
 import AppSlider from "./components/AppSlider.vue";
-import AppHero from "./components/AppHero.vue";
-import SectionAbout from "./components/Section/SectionAbout.vue";
-import SectionPortofolio from "./components/Section/SectionPortofolio.vue";
-import SectionProject from "./components/Section/SectionProject";
-import SectionGallery from "./components/Section/SectionGallery";
-import SectionContact from "./components/Section/SectionContact";
 import SectionFooter from "./components/Section/SectionFooter";
 export default {
   name: "App",
@@ -30,12 +18,6 @@ export default {
   components: {
     AppHeader,
     AppSlider,
-    AppHero,
-    SectionAbout,
-    SectionPortofolio,
-    SectionProject,
-    SectionGallery,
-    SectionContact,
     SectionFooter,
   },
 

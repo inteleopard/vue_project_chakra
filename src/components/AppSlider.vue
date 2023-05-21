@@ -1,6 +1,6 @@
 <template>
   <v-container
-      class="pt-15"
+      class="pt-20"
       :prev-icon="prevIcon"
       :next-icon="nextIcon"
   >
