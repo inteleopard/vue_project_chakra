@@ -5,29 +5,29 @@
     light
     elevation="6"
     elevate-on-scroll
+    height="130"
   >
-    <v-img
+      <v-img
           :src="require('../assets/logo.webp')"
-          class=""
+          class="col-3"
           contain
-          height="60"
-        />
-    <v-spacer />
-    <v-list class="d-flex align-center">
-      <v-list-item
-        link
-        v-for="(menu, index) in menus"
-        :key="index"
-        :to="menu.route"
-      >
-        <v-list-item-title>{{ menu.title }}</v-list-item-title>
-      </v-list-item>
-    </v-list>
-    <v-icon></v-icon>
-    <v-icon>mdi-facebook</v-icon>
-    <v-icon>mdi-twitter</v-icon>
-    <v-icon>mdi-dribbble</v-icon>
-    <v-icon>mdi-instagram</v-icon>
+          height="50"
+      />
+      <v-list class="d-flex align-center col-6">
+        <v-list-item
+            link
+            v-for="(menu, index) in menus"
+            :key="index"
+            :to="menu.route"
+        >
+          <v-list-item-title>{{ menu.title }}</v-list-item-title>
+        </v-list-item>
+      </v-list>
+      <v-list class="col-3 align-end">
+        <v-icon class="justify-end" style="margin-left: 50%;">mdi-facebook</v-icon>
+        <v-icon class="justify-end" style="margin-left: 10%;">mdi-twitter</v-icon>
+        <v-icon class="justify-end" style="margin-left: 10%;">mdi-instagram</v-icon>
+      </v-list>
   </v-app-bar>
 </template>
 
@@ -52,6 +52,17 @@ export default {
   font-size: 32px;
   color: #536dfe;
   font-weight: 700;
-  font-family: cursive;
+  
+}
+.v-list-item__title {
+  font-family: "Crimson Pro",serif !important;
+  font-size: 18px !important;
+  line-height: 1.5em !important;
+  font-weight: 500 !important;
+}
+
+.v-image__image--contain{
+  background-position: left center !important;
+  margin-left: 50px;
 }
 </style>
