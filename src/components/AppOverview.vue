@@ -30,7 +30,18 @@
         </v-row>
       </v-col>
       <v-col lg-6>
-
+        <v-img
+            class="bg-white overview-img-f"
+            width="400"
+            :aspect-ratio="1"
+            :src="require('../assets/image1.jpg')"
+        ></v-img>
+        <v-img
+            class="bg-white overview-img-s"
+            width="400"
+            :aspect-ratio="1"
+            :src="require('../assets/image2.jpg')"
+        ></v-img>
       </v-col>
     </v-row>
   </v-container>
@@ -47,5 +58,16 @@ export default {
   font-family: "Crimson Pro","serif" !important;
   font-size: 3.35em !important;
   font-weight: 400 !important;
+}
+.overview-img-f{
+  position: absolute;
+  left: 920px;
+  border-radius: 20px 20px 20px 20px;
+}
+.overview-img-s{
+  position: absolute;
+  left: 720px;
+  top: 1050px;
+  border-radius: 20px 20px 20px 20px;
 }
 </style>
