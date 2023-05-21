@@ -1,6 +1,6 @@
 <template>
   <v-app-bar
-    style="padding: 0 90px"
+    style="padding: 0 150px"
     app
     color="white"
     light
@@ -10,9 +10,9 @@
     <!-- <v-toolbar-title></v-toolbar-title> -->
     <v-img
           :src="require('../assets/logo.webp')"
-          class="my-3"
+          class="my-2"
           contain
-          height="200"
+          height="100"
         />
     <v-spacer />
     <v-list class="d-flex align-center">
